@@ -504,7 +504,6 @@ function formatJoke(joke) {
  .addField('g!Time', ' 󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀')
  .addField('g!Invite', ' 󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀')
  .addField('g!Serverinfo', ' 󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀󠀀')
- .addField('g!Staff', ' ')
  .setTimestamp()
  message.channel.send(Embed);
  }
