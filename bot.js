@@ -179,6 +179,8 @@ bot.on('message', (message) => {
  }
 });
 
+
+
 bot.on('message', (message) => {
  if(message.content.toLowerCase() == 'g!ko') {
  message.reply("You are dead. *Why did you kill yourself?*"); 
@@ -378,6 +380,25 @@ function formatJoke(joke) {
  .addField('Bot Language', 'JavaScript')
  .addField('Owner/Creator', 'SirGor#0624')
  .addField('Note', "If you want to do suggestions and the bot reacts, include SuggestionGB somewhere in your message and the bot will react! Also, make a logs channel and a welcome-leave channel if not done already.")
+ .setTimestamp()
+ message.channel.send(Embed);
+ }
+ })
+
+ bot.on('message', (message) => {
+ if (message.content.toLowerCase().startsWith(prefix + "staff")) {
+ const boticon = bot.user.displayAvatarURL
+ const Embed = new Discord.RichEmbed()
+ .setColor('RANDOM')
+ .setTitle('Staff')
+ .setDescription(`List of staff members`)
+ .addField('**List:**')
+ .addField('SirGor (Owner)')
+ .addField('Icyz (Co-Owner/Head Dev)')
+ .addfield('xKayZero (Co Head Dev)')
+ .setThumbnail(boticon)
+ .addField('Alligator™ (Manager)')
+ .addField('Sem.wav (Head Mod)')
  .setTimestamp()
  message.channel.send(Embed);
  }
